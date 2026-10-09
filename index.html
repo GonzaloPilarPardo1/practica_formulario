@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <form class="formulario">
+        <section>
+            <h2>Iniciar sesion</h2>
+            <div>
+                <label class="formulario_labels" for="nombre">Nombre</label>
+                <input class="formulario_campo" type="text" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label class="formulario_labels" for="mail">Mail</label>
+                <input class="formulario_campo" type="email" name="mail" placeholder="Ingrese su mail">
+            </div>
+            <div>
+                <label class="formulario_labels" for="password">Password</label>
+                <input class="formulario_campo" type="password" name="password" placeholder="Ingrese su password">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Cuales son sus espectativas acerca del curso</h2>
+            <ul>
+                <li>
+                    <label class="formulario_labels_box" for="box1">Adquirir nuevos conocimientos y habilidades</label>
+                    <input class="formulario_check" type="checkbox" name="box1">
+                </li>
+                                <li>
+                    <label class="formulario_labels_box" for="box2">Aplicar lo aprendido en situaciones prácticas</label>
+                    <input class="formulario_check" type="checkbox" name="box2">
+                </li>
+                <li>
+                    <label class="formulario_labels_box" for="box3">Mejorar mis oportunidades laborales</label>
+                    <input class="formulario_check" type="checkbox" name="box3">
+                </li>
+                                <li>
+                    <label class="formulario_labels_box" for="box4">Profundizar y actualizar conocimientos previo</label>
+                    <input class="formulario_check" type="checkbox" name="box4">
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Cuan conforme esta con los contenidos del curso hasta este momento</h2>
+            <ul>
+                <li>
+                    <div>
+                        <label class="formulario_labels_radio" for="radio1">Muy conforme</label>
+                        <input class="formulario_radio" type="radio" name="nivel" >
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="formulario_labels_radio" for="radio2">Conforme</label>
+                        <input class="formulario_radio" type="radio" name="radio2">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="formulario_labels_radio" for="radio3">Ni conforme ni disconforme</label>
+                        <input class="formulario_radio" type="radio" name="radio3">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="formulario_labels_radio" for="radio4">Poco conforme</label>
+                        <input class="formulario_radio" type="radio" name="radio4">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="formulario_labels_radio" for="radio5">Nada conforme</label>
+                        <input class="formulario_radio" type="radio" name="radio5">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                <label class="formulario_labels_radio" for="comentario">Dejenos un comentario</label>
+                <textarea name="comentario" id="comentario"></textarea>
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <div>
+                <label for="archivo">Adjunte su foto:</label>
+                <input type="file" id="archivo" name="archivo" accept="image/*">
+                <br>
+                <small><i>Formatos permitidos: <b>JPG, PNG o similares.</b></i></small>
+            </div>
+        </section>
+        <hr>
+        <section>
+                    <div>
+            <label for="country">Pais de origen:</label>
+            <select name="country" id="country">
+            
+                <option value="">Argentina</option>
+                <option value="">Francia</option>
+                <option value="">Brasil</option>
+                <option value="" selected disabled>--Seleccione un pais--</option>
+            </select>
+        </div>
+        </section>
+        <hr>
+        <section class="contenedor_botones">
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Borrar formulario</button>
+        </section>
+        
+    </form>
+    <footer>
+        <span> Alumno: Gonzalo Pilar Pardo. 2026 <sup>&reg</sup></span>
+        <img src="./img/Logo UTN Horizontal.png" alt="Logo e learning">
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+:root{
+    --color_principal_oscuro:#163473;
+    --color_principal:#4775d7;
+    --color_fondo:#9599a2;
+    --color_fondo_oscuro:#090909;
+    --color_blanco:#fff;
+    --color_negro:hsl(0, 0%, 0%);
+    --color_gris:#bfbebe;
+
+    --fuente_principal:'Arimo'
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+
+body {
+    background-color: var(--color_gris);
+    font-family: var(--fuente_principal);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+form {
+    background-color:var(--color_fondo);
+    border-radius: 1rem;
+    width: 60%;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color_principal_oscuro);
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    width: 60%;
+}
+h2 {
+    color: var(--color_blanco);
+    text-align: left;
+    font-size: 2.5 rem;
+    margin: 2rem 2rem;
+    font-weight: 700;
+}
+hr{
+    border-color: var(--color_fondo_oscuro);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 3rem;
+    width: 60%;
+}
+img {
+    width: 30rem;
+    height: auto;
+}
+
+label, small{
+    margin:2rem;
+}
+
+button {
+    background-color:var(--color_principal);
+    color: var(--color_blanco);
+    font-size: 1.6rem;
+    padding: 1rem;
+
+}
+.contenedor_botones {
+    text-align: right;
+}
+
+button:hover {
+    background-color: var(--color_principal_oscuro);
+}
+.formulario_labels, .formulario_campo {
+    padding: 0;
+    margin: 1 rem;
+}
+section{
+    padding: 0.3rem;
+}
+
