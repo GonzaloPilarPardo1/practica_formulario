@@ -10,6 +10,9 @@
     --fuente_principal:'Arimo'
 
 }
+*{
+    box-sizing: border-box;
+}
 
 html {
     box-sizing: border-box;
